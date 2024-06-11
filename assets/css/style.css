@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/*.pikachu {
+    background-image: url(../img/pikachu_cola.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: 430px 120px;
+}*/
+
+.ojo-uno {
+    width: 40px; 
+    top: 200px; 
+    left: 44%;
+    transform-origin: center center;
+}
+
+.ojo-dos{
+    width: 35px; 
+    top: 197px; 
+    left: 51%;
+    transform-origin: center center;
+}
+
+.boca {
+    width: 50px; 
+    top: 235px; 
+    left: 47%;
+}
+
+.brazo-left{
+    width: 60px; 
+    top: 310px; 
+    left: 43%;
+}
+
+.brazo-right {
+    width: 65px; 
+    top: 310px; 
+    left: 50.5%;
+}
+
+.cola {
+    width: 250px;
+    top: 150px;
+    left: 53.7%;
+    transform-origin: bottom left;
+}
+
+/*.ojo-movimiento {
+    transform: rotate(90deg)!important;
+}
+
+.ojoo-movimiento {
+    transform: rotate(250deg)!important;
+}*/
+
+.ojos-movimiento {
+    animation: ojoss 1000ms linear infinite;
+}
+
+.boca-movimiento {
+
+    transform: translate(-10px, 0px) rotate(14deg)!important;
+}
+
+.brazo-left-movimiento {
+    transform: rotate(263deg)!important;
+}
+
+.brazo-right-movimiento {
+    transform: rotate(107deg)!important;
+}
+
+.cola-movimiento {
+    animation: cola 1s ease-in-out infinite;
+}
+
+@keyframes ojoss {
+    0% {
+        transform: rotate(0deg) ;
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cola {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
